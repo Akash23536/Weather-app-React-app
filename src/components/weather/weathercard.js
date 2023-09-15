@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useState, useEffect } from "react";
 
 const Weathercard = ({
   temp,
@@ -10,7 +10,7 @@ const Weathercard = ({
   country,
   sunset,
 }) => {
-  const [weatherState, setWeatheState] = React.useState("");
+  const [weatherState, setWeatheState] = useState("");
 
   useEffect(() => {
     if (weathermood) {
